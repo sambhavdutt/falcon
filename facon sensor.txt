@@ -1,0 +1,6 @@
+git clone https://github.com/sambhavdutt/falcon.git
+sudo dpkg -i Ubuntu_falcon-sensor_4.11.0-5607_amd64.deb
+sudo /opt/CrowdStrike/falconctl -s --cid=20709802E00E4B4C9442CE5F8CA3E69D-9C
+service falcon-sensor start
+systemctl start falcon-sensor
+ps -e | grep falcon-sensor
